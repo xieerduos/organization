@@ -1,23 +1,18 @@
-import logo from "./logo.svg";
 import "./App.css";
+// import OrganizationGraph from "./components/OrganizationGraph";
+import FlowAnalysisGraph from "./components/FlowAnalysisGraph";
 
 function App() {
     return (
         <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
+            <div className="graph-wrapper">
+                <div className="graph-item">
+                    <FlowAnalysisGraph></FlowAnalysisGraph>
+                </div>
+                {/* <div className="graph-item">
+                    <OrganizationGraph></OrganizationGraph>
+                </div> */}
+            </div>
         </div>
     );
 }
